@@ -1,0 +1,6 @@
+numpy==1.25.2
+scikit_learn==1.2.2
+joblib==1.4.2
+tensorflow==2.15.0
+Flask==3.0.3
+jsonify==0.5

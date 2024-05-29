@@ -1,5 +1,5 @@
 import numpy as np
-from flask import Flask, request, jsonify, render_template,jsonify
+from flask import Flask, request, jsonify, render_template
 import pickle
 from diabetes_prediction import ANN
 
