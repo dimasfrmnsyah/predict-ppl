@@ -9,10 +9,6 @@ filepath_model = 'diabetes_model.h5'
 ann_model = ANN(loc_scaler = filepath_scaler, loc_model = filepath_model)
 
 
-@app.route('/')
-def home():
-    return render_template('index.html')
-
 @app.route('/predict',methods=['POST'])
 def predict():
     float_features = [float(x) for x in request.form.values()]
@@ -29,4 +25,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=3000)
