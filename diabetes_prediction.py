@@ -12,6 +12,7 @@ class ANN():
     data_scaled = self.diabetes_scaler.transform(data)
     predicted_score = self.diabetes_model.predict(data_scaled, verbose=0)
     round_score = np.round(predicted_score)
+    
     if round_score == 1:
       predicted_class = 'Diabetes'
     else:
